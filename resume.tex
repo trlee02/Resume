@@ -1,0 +1,172 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+% Last update time
+\lastupdated
+
+% Title name
+\namesection{}{ Tristan Lee}{
+\phone{+1(778)363-7904} \email{\href{mailto:tristan.rene.lee@gmail.com}{tristan.rene.lee@gmail.com}}}
+
+% Column one
+\begin{minipage}[t]{0.33\textwidth} 
+
+% Skills
+\cvsection{Skills}
+
+\subsection{Electrical}
+Altium \textbullet{} Oscilliscope \textbullet{} Eagle \textbullet{} Soldering 
+\sectionsep
+\subsection{Programming}
+Python \textbullet{} Java \textbullet{} C/C++ \textbullet{} Git \textbullet{} Linux
+
+\sectionsep
+\subsection{Mechanical}
+OnShape \textbullet{} SolidWorks \textbullet{} Fusion 360 \textbullet{} 3D Printing
+
+% Education
+\cvsection{Education} 
+
+\subsection{U. of British Columbia}
+\descript{Engineering Physics}
+\cvevent{Grad. 2026}{Vancouver, BC} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Third Year, 88.8\% Avg.
+
+% Links
+\cvsection{Links}
+
+\linkedin{Linkedin} \href{https://www.linkedin.com/in/tristanrlee/}{\bf linkedin.com/in/tristanrlee/}\\
+\github{GitHub} \href{https://github.com/trlee02/}{\bf trlee02} 
+\sectionsep
+
+% Awards
+\cvsection{Awards} 
+
+\subsection{Presidential Scholars}
+\descript{University of British Columbia}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Awarded to accomplished Canadian students.
+\sectionsep
+\subsection{Tuum Est Experiential}
+\descript{University of British Columbia}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Awarded to students with excellent academic standing and strong personal profiles.
+\sectionsep
+
+\subsection{Trek Excellence}
+\descript{University of British Columbia}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Awarded to top 5\% of UBC undergraduate students.
+\sectionsep
+
+% Interests
+\cvsection{Interests}\\
+Robotics \\
+Machine learning  \\
+Rocketry\\
+Downhill Skiing \\
+Mountain Biking \\
+Surfing \\
+Hiking\\
+Powerlifting \\
+
+\sectionsep
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+% Experience
+\cvsection{Technical Experience}
+
+\runsubsection{Manufacting Test Engineer} \\
+\descript{Enersys - Alpha Technologies}
+\cvevent{Jan. 2022 – May 2022}{Vancouver, BC} 
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Assembled 5 PCB test stands, validated LabVIEW signal tests to specific pins using an oscilliscope, troubleshot and repaired connections, routing and tests to ensure proper performance.
+\item Constructed test stand circuit schematics and documented PCB test points in Altium Designer for high voltage DC-DC coverter circuits.  
+\item Used Altium Designer to document PCB test points and build and understanding for a variety of DC-DC converr circuits.
+\item Created Python and LabVIEW software to enable data collection and PDF conversion for PCB tests, then implemented the software into 10 different test stands. 
+\end{tightemize}
+\sectionsep
+
+
+% Recent Projects
+\cvsection{Project Experience} 
+
+\runsubsection{\href{https://projectlab.engphys.ubc.ca/enph-253/}{Engineering Physics Robot Competition}} \\
+\descript{University of British Columbia}
+\cvevent{May 2022 – Aug 2022}{Vancouver, BC} 
+\begin{tightemize}
+    \item Collaborated with a group of four to design and build a line following, IR following and item retrieval robot that acheived 4th place.
+    \item Designed and constructed several different circuits including power distribution, motor driver, and IR sensing circuits.
+    \item Troubleshot and tested many circuits constructed by my teammates and myself, to ensure the presence of desired signals using an oscilliscope.
+    \item Wrote firmware to control a linearly translating robot arm and claw, as well as sense retrievable items. 
+    \item Created CAD designs for the chassis and claw sections of our robot using OnShape.  
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Engineering Physics Machine Learning Competiton} \\
+\descript{University of British Columbia}
+\cvevent{Sep 2022 - Dec 2022}{Vancouver, BC} 
+\begin{tightemize}
+        \item Worked in a group of 2 to design and create state machine architecture to control a robot using ROS Noetic on a simulated course in Gazebo.
+        \item Implemented imitation learning to identify key objects inside a simulated enviroment.
+        \item Setup a working tree and Gazebo enviroment in Linux needed to collect data for neural network training and to test robot behaviour.
+        \item Investigated reinforcement learning and explored Qlearning using Gym Gazebo
+\end{tightemize}
+\sectionsep
+
+\runsubsection{UBC Rocket Avionics} \\
+\descript{University of British Columbia}
+\cvevent{Oct 2022 - Present}{Vancouver, BC} 
+\begin{itemize}
+    \item Designed half-bridge e-match ignition PCB in Altium designer, as a part of a stackable, modular flight computer.
+    \item Learning manufacturing and testing methods for our teams PCBs.   
+    \item Currently collaborating with a team of six to begin testing and manufacturing of flight computers.
+\end{itemize} 
+\sectionsep
+
+
+% \runsubsection{Email Interaction Analytics Program} \\
+% \descript{University of British Columbia}
+% \cvevent{Nov 2021 – Dec 2021}{Vancouver, BC} 
+% \begin{itemize}
+%     \item 
+% \end{itemize} 
+
+\end{minipage} 
+\end{document}  
