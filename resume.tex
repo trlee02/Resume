@@ -35,11 +35,11 @@
 \lastupdated
 
 % Title name
-\namesection{}{ Tristan Lee}{
+\namesection{}{Tristan Lee}{
 \phone{+1(778)363-7904} \email{\href{mailto:tristan.rene.lee@gmail.com}{tristan.rene.lee@gmail.com}}}
 
 % Column one
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.25\textwidth} 
 
 % Skills
 \cvsection{Skills}
@@ -106,7 +106,7 @@ Powerlifting \\
 % Column two
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.72\textwidth} 
 
 % Experience
 \cvsection{Technical Experience}
@@ -114,27 +114,25 @@ Powerlifting \\
 \runsubsection{Manufacting Test Engineer} \\
 \descript{Enersys - Alpha Technologies}
 \cvevent{Jan. 2022 – May 2022}{Vancouver, BC} 
-% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Assembled 5 PCB test stands, validated LabVIEW signal tests to specific pins using an oscilliscope, troubleshot and repaired connections, routing and tests to ensure proper performance.
-\item Constructed test stand circuit schematics and documented PCB test points in Altium Designer for high voltage DC-DC coverter circuits.  
-\item Used Altium Designer to document PCB test points and build and understanding for a variety of DC-DC converr circuits.
+\item Assembled 5 PCB test stands, validated LabVIEW signal tests to specific pins using an oscilliscope, troubleshot and repaired connections and tests to ensure proper performance.
 \item Created Python and LabVIEW software to enable data collection and PDF conversion for PCB tests, then implemented the software into 10 different test stands. 
+\item Constructed circuit schematics in Altium Designer and wrote test scripts in LabVIEW for PCB test stands, as well as identified test points in Altium for a variety of DC-DC converters.  
 \end{tightemize}
-\sectionsep
-
+% \sectionsep
 
 % Recent Projects
-\cvsection{Project Experience} 
+\cvsection{Project Experience}
 
 \runsubsection{\href{https://projectlab.engphys.ubc.ca/enph-253/}{Engineering Physics Robot Competition}} \\
 \descript{University of British Columbia}
 \cvevent{May 2022 – Aug 2022}{Vancouver, BC} 
 \begin{tightemize}
-    \item Collaborated with a group of four to design and build a line following, IR following and item retrieval robot that acheived 4th place.
-    \item Designed and constructed several different circuits including power distribution, motor driver, and IR sensing circuits.
-    \item Troubleshot and tested many circuits constructed by my teammates and myself, to ensure the presence of desired signals using an oscilliscope.
-    \item Wrote firmware to control a linearly translating robot arm and claw, as well as sense retrievable items. 
+    \item Collaborated with a group of 4 to design and manufacture an item retrieval robot that navigated a course using line following and 10kHz IR sensing, acheiving 4th place.
+    \item Designed and constructed over 10 circuits including power distribution for motors and sensors, DC motor drivers, stepper motor drivers, and microcontroller pin distribution.
+    \item Troubleshot and tested many circuits constructed with my teammates, to ensure the presence of desired signals using an oscilliscope.
+    \item Integrated firmware into C++ statemachine using PlatformIO to control a linearly translating robot arm and 2 claws, as well as sense retrievable items using sonar sensors. 
     \item Created CAD designs for the chassis and claw sections of our robot using OnShape.  
 \end{tightemize}
 \sectionsep
@@ -144,9 +142,9 @@ Powerlifting \\
 \cvevent{Sep 2022 - Dec 2022}{Vancouver, BC} 
 \begin{tightemize}
         \item Worked in a group of 2 to design and create state machine architecture to control a robot using ROS Noetic on a simulated course in Gazebo.
-        \item Implemented imitation learning to identify key objects inside a simulated enviroment.
-        \item Setup a working tree and Gazebo enviroment in Linux needed to collect data for neural network training and to test robot behaviour.
-        \item Investigated reinforcement learning and explored Qlearning using Gym Gazebo
+        \item Implemented OpenCV in Python to capture images of license plates inside a simulated enviroment and identify characters using a convolution neural network.
+        \item Setup a directory structure and Gazebo enviroment in Linux needed to collect data for convolution neural network training for robot self driving.
+        % \item Implemented a QLearning algorithm in Gym Gazebo and explored other types of reinforcement learning.
 \end{tightemize}
 \sectionsep
 
