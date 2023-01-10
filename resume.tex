@@ -2,11 +2,12 @@
 
 % Removing page numbers
 \usepackage{fancyhdr}
+\usepackage{graphicx}
 \pagestyle{fancy}
 \fancyhf{}
 
 % Change the geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=1.3cm, right=1.4cm, bottom=1.3cm, footskip=.5cm}
 
 % Defining your colors
 \definecolor{VividPurple}{HTML}{3E0097}
@@ -26,14 +27,18 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+% \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\setlength\headheight{36pt} %% just to make warning go away. Adjust the value after looking into the warning.
+% 
+
+\lhead{\includegraphics[width=\textwidth]{sciencecoop_header.png}}
 
 % start document
 \begin{document}
 
 % Last update time
-\lastupdated
-
+% \lastupdated
+\sectionsep
 % Title name
 \namesection{}{Tristan Lee}{
 \phone{+1(778)363-7904} \email{\href{mailto:tristan.rene.lee@gmail.com}{tristan.rene.lee@gmail.com}}}
@@ -55,7 +60,7 @@ Python \textbullet{} Java \textbullet{} C/C++ \textbullet{} Git \textbullet{} Li
 OnShape \textbullet{} SolidWorks \textbullet{} Fusion 360 \textbullet{} 3D Printing
 
 % Education
-\cvsection{Education} 
+\cvsection{Education} -
 
 \subsection{U. of British Columbia}
 \descript{Engineering Physics}
@@ -125,6 +130,18 @@ Powerlifting \\
 % Recent Projects
 \cvsection{Project Experience}
 
+\runsubsection{Engineering Physics Machine Learning Competiton} \\
+\descript{University of British Columbia}
+\cvevent{Sep 2022 - Dec 2022}{Vancouver, BC} 
+\begin{tightemize}
+        \item Worked in a group of 2 to design and create state machine architecture to control a robot using ROS Noetic on a simulated course in Gazebo.
+        \item Implemented OpenCV in Python to capture images of license plates inside a simulated enviroment and identify characters using a convolution neural network.
+        \item Setup data collection pipeline using OpenCV a Linux directory structure to collect over 25'000 images needed to run a data collection program using OpenCV for convolution neural network training for robot self driving.
+        \item Managed features with my teammate using Git version control and GitHub.
+        % \item Implemented a QLearning algorithm in Gym Gazebo and explored other types of reinforcement learning.
+\end{tightemize}
+\sectionsep
+
 \runsubsection{\href{https://projectlab.engphys.ubc.ca/enph-253/}{Engineering Physics Robot Competition}} \\
 \descript{University of British Columbia}
 \cvevent{May 2022 – Aug 2022}{Vancouver, BC} 
@@ -137,17 +154,6 @@ Powerlifting \\
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Engineering Physics Machine Learning Competiton} \\
-\descript{University of British Columbia}
-\cvevent{Sep 2022 - Dec 2022}{Vancouver, BC} 
-\begin{tightemize}
-        \item Worked in a group of 2 to design and create state machine architecture to control a robot using ROS Noetic on a simulated course in Gazebo.
-        \item Implemented OpenCV in Python to capture images of license plates inside a simulated enviroment and identify characters using a convolution neural network.
-        \item Setup data collection pipeline using OpenCV a Linux directory structure to collect over 25'000 images needed to run a data collection program using OpenCV for convolution neural network training for robot self driving.
-        \item Managed features with my teammate using Git version control and GitHub.
-        % \item Implemented a QLearning algorithm in Gym Gazebo and explored other types of reinforcement learning.
-\end{tightemize}
-\sectionsep
 
 \runsubsection{UBC Rocket Avionics} \\
 \descript{University of British Columbia}
